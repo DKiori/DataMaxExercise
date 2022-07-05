@@ -1,0 +1,9 @@
+list1 = [1,2,3,8,100,4,65,9,7] #1
+list2 = [5,6,43,8,39,74,9,100] #1
+
+list1.extend(i for i in list2 if i not in list1) #n
+
+print(list1) #1
+
+#The reason for choosing list comprehension is because, when dealing with small amounts of data it is more efficient to use this method.
+#The Big (O) notation of this code is 1+1+1+n= 3+n.
